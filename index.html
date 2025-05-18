@@ -69,14 +69,42 @@
       z-index: 10;
     }
 
+    .gaming-text {
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff;
+      animation: glow 2s infinite alternate;
+      z-index: 1;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #00f0ff;
+      }
+      to {
+        text-shadow: 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+      }
+    }
+
     h1 {
-      color: white;
       background-color: black;
       padding: 10px 20px;
       border-radius: 20px;
       margin-bottom: 30px;
-      font-size: 28px;
+      font-size: 32px;
       z-index: 1;
+      background: black;
+      color: transparent;
+      background-image: linear-gradient(45deg, red, orange, yellow, green, cyan, blue, violet);
+      background-clip: text;
+      -webkit-background-clip: text;
+      animation: rainbow 5s linear infinite;
+    }
+
+    @keyframes rainbow {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
     }
 
     .link-button {
@@ -95,11 +123,11 @@
       border: none;
       z-index: 1;
       position: relative;
-      box-shadow: 0 0 15px 3px rgba(255, 255, 255, 0.3); /* genel parıltı */
+      box-shadow: 0 0 15px 3px rgba(255, 255, 255, 0.3);
     }
 
     .link-button:hover {
-      box-shadow: 0 0 20px 6px rgba(255, 255, 255, 0.6); /* hover parıltı artışı */
+      box-shadow: 0 0 20px 6px rgba(255, 255, 255, 0.6);
     }
 
     .discord {
@@ -114,7 +142,6 @@
       background: linear-gradient(45deg, #010101, #3b82f6);
     }
 
-    /* Mənə Dəstək Ol! - özel güçlü parıltı */
     .support-button {
       background-color: white;
       color: black;
@@ -136,6 +163,7 @@
   <div class="top-left">Game</div>
   <div class="bottom-right">AZERBAIJAN</div>
 
+  <div class="gaming-text">🎮 GAMING 🎮</div>
   <h1>tuncaytm0</h1>
 
   <a class="link-button discord" href="https://discord.gg/9hSWwUbWSp" target="_blank">Discord Serverim!</a>
