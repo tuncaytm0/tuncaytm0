@@ -17,10 +17,9 @@
       margin: 0;
       position: relative;
       color: white;
-      overflow: hidden; /* yağmur dışına taşmasın */
+      overflow: hidden;
     }
 
-    /* Yağmur container */
     .rain-container {
       position: fixed;
       top: 0;
@@ -46,7 +45,6 @@
       }
     }
 
-    /* Sol üstte Game yazısı */
     .top-left {
       position: fixed;
       top: 15px;
@@ -59,7 +57,6 @@
       z-index: 10;
     }
 
-    /* Sağ altta AZERBAIJAN yazısı */
     .bottom-right {
       position: fixed;
       bottom: 15px;
@@ -91,52 +88,49 @@
       text-decoration: none;
       font-weight: bold;
       font-size: 16px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       transition: all 0.3s ease;
       color: white;
       display: block;
       user-select: none;
       border: none;
       z-index: 1;
+      position: relative;
+      box-shadow: 0 0 15px 3px rgba(255, 255, 255, 0.3); /* genel parıltı */
+    }
+
+    .link-button:hover {
+      box-shadow: 0 0 20px 6px rgba(255, 255, 255, 0.6); /* hover parıltı artışı */
     }
 
     .discord {
       background: linear-gradient(45deg, #7b2ff7, #2c3e50);
     }
-    .discord:hover {
-      filter: brightness(1.2);
-    }
 
     .youtube {
       background-color: #e52d27;
-    }
-    .youtube:hover {
-      filter: brightness(1.2);
-    }
-
-    .support-button {
-      background-color: white;
-      color: black;
-      box-shadow: 0 0 15px 3px rgba(255, 255, 255, 0.7);
-      position: relative;
-      z-index: 5;
-      transition: box-shadow 0.3s ease;
-    }
-    .support-button:hover {
-      box-shadow: 0 0 25px 5px rgba(255, 255, 255, 1);
     }
 
     .tiktok {
       background: linear-gradient(45deg, #010101, #3b82f6);
     }
-    .tiktok:hover {
-      filter: brightness(1.2);
+
+    /* Mənə Dəstək Ol! - özel güçlü parıltı */
+    .support-button {
+      background-color: white;
+      color: black;
+      box-shadow: 0 0 20px 6px rgba(255, 255, 255, 0.8);
+      position: relative;
+      z-index: 5;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .support-button:hover {
+      box-shadow: 0 0 35px 10px rgba(255, 255, 255, 1);
     }
   </style>
 </head>
 <body>
 
-  <!-- Yağmur efekt container -->
   <div class="rain-container"></div>
 
   <div class="top-left">Game</div>
@@ -149,7 +143,6 @@
   <a class="link-button youtube" href="https://youtube.com/@tuncaytm0" target="_blank">YouTube Kanalım!</a>
   <a class="link-button tiktok" href="https://tiktok.com/@tuncaytm0" target="_blank">TikTok Profilim!</a>
 
-  <!-- JavaScript -->
   <script>
     const container = document.querySelector(".rain-container");
 
