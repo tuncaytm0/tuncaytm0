@@ -14,6 +14,7 @@
       justify-content: center;
       min-height: 100vh;
       margin: 0;
+      position: relative;
     }
 
     h1 {
@@ -23,6 +24,7 @@
       border-radius: 20px;
       margin-bottom: 30px;
       font-size: 28px;
+      z-index: 1;
     }
 
     .link-button {
@@ -30,31 +32,33 @@
       padding: 15px 20px;
       margin: 10px 0;
       border-radius: 30px;
-      background-color: black;
-      color: white;
+      background: linear-gradient(135deg, white 50%, black 50%);
+      color: black;
       text-align: center;
       text-decoration: none;
       font-weight: bold;
       font-size: 16px;
       transition: all 0.3s ease;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .link-button:hover {
-      background-color: white;
-      color: black;
+      position: relative;
+      z-index: 1;
       border: 2px solid black;
     }
 
+    .link-button:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
     .support-button {
-      background-color: #007bff; /* Mavi */
+      background-color: #007bff;
       color: white;
+      border: none;
     }
 
     .support-button:hover {
-      background-color: white;
-      color: #007bff;
-      border: 2px solid #007bff;
+      background-color: #0056b3;
+      transform: scale(1.03);
     }
   </style>
 </head>
