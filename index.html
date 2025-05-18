@@ -5,15 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>tuncaytm0</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      background: linear-gradient(135deg, white 50%, black 50%);
+      margin: 0;
       font-family: Arial, sans-serif;
+      min-height: 100vh;
+      background: linear-gradient(135deg, white 50%, black 50%);
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      min-height: 100vh;
-      margin: 0;
       position: relative;
     }
 
@@ -27,13 +31,16 @@
       z-index: 1;
     }
 
+    .button-container {
+      position: relative;
+      z-index: 1;
+    }
+
     .link-button {
       width: 260px;
       padding: 15px 20px;
       margin: 10px 0;
       border-radius: 30px;
-      background: linear-gradient(135deg, white 50%, black 50%);
-      color: black;
       text-align: center;
       text-decoration: none;
       font-weight: bold;
@@ -41,8 +48,10 @@
       transition: all 0.3s ease;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       position: relative;
-      z-index: 1;
+      color: inherit;
+      background-color: transparent;
       border: 2px solid black;
+      backdrop-filter: blur(1px);
     }
 
     .link-button:hover {
@@ -51,14 +60,13 @@
     }
 
     .support-button {
-      background-color: #007bff;
+      background-color: #e53935;
       color: white;
       border: none;
     }
 
     .support-button:hover {
-      background-color: #0056b3;
-      transform: scale(1.03);
+      background-color: #b71c1c;
     }
   </style>
 </head>
@@ -66,10 +74,12 @@
 
   <h1>tuncaytm0</h1>
 
-  <a class="link-button" href="https://discord.gg/9hSWwUbWSp" target="_blank">Discord Serverim!</a>
-  <a class="link-button support-button" href="https://kofe.al/@tuncaytm0" target="_blank">Mənə Dəstək Ol!</a>
-  <a class="link-button" href="https://youtube.com/@tuncaytm0" target="_blank">YouTube Kanalım!</a>
-  <a class="link-button" href="https://tiktok.com/@tuncaytm0" target="_blank">TikTok Profilim!</a>
+  <div class="button-container">
+    <a class="link-button" href="https://discord.gg/9hSWwUbWSp" target="_blank">Discord Serverim!</a>
+    <a class="link-button support-button" href="https://kofe.al/@tuncaytm0" target="_blank">Mənə Dəstək Ol!</a>
+    <a class="link-button" href="https://youtube.com/@tuncaytm0" target="_blank">YouTube Kanalım!</a>
+    <a class="link-button" href="https://tiktok.com/@tuncaytm0" target="_blank">TikTok Profilim!</a>
+  </div>
 
 </body>
 </html>
