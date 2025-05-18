@@ -18,7 +18,6 @@
       color: white;
     }
 
-    /* Sol üstte Game yazısı */
     .top-left {
       position: fixed;
       top: 15px;
@@ -31,7 +30,6 @@
       z-index: 10;
     }
 
-    /* Sağ altta AZERBAIJAN yazısı */
     .bottom-right {
       position: fixed;
       bottom: 15px;
@@ -44,14 +42,28 @@
       z-index: 10;
     }
 
-    h1 {
-      color: white;
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
       background-color: black;
       padding: 10px 20px;
       border-radius: 20px;
       margin-bottom: 30px;
-      font-size: 28px;
       z-index: 1;
+    }
+
+    .header img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .header span {
+      color: white;
+      font-size: 28px;
+      font-weight: bold;
     }
 
     .link-button {
@@ -71,7 +83,6 @@
       border: none;
     }
 
-    /* Discord: mor-mavi gradient */
     .discord {
       background: linear-gradient(45deg, #7b2ff7, #2c3e50);
     }
@@ -79,7 +90,6 @@
       filter: brightness(1.2);
     }
 
-    /* YouTube: kırmızı */
     .youtube {
       background-color: #e52d27;
     }
@@ -87,7 +97,6 @@
       filter: brightness(1.2);
     }
 
-    /* Mənə Dəstək Ol!: beyaz, glow efekti */
     .support-button {
       background-color: white;
       color: black;
@@ -100,7 +109,6 @@
       box-shadow: 0 0 25px 5px rgba(255, 255, 255, 1);
     }
 
-    /* TikTok: siyah-mavi gradient */
     .tiktok {
       background: linear-gradient(45deg, #010101, #3b82f6);
     }
@@ -114,8 +122,13 @@
   <div class="top-left">Game</div>
   <div class="bottom-right">AZERBAIJAN</div>
 
-  <h1>tuncaytm0</h1>
+  <!-- Başlık + Profil Fotoğrafı -->
+  <div class="header">
+    <img src="pp.png" alt="Profil Fotoğrafı" />
+    <span>tuncaytm0</span>
+  </div>
 
+  <!-- Link Butonları -->
   <a class="link-button discord" href="https://discord.gg/9hSWwUbWSp" target="_blank">Discord Serverim!</a>
   <a class="link-button support-button" href="https://kofe.al/@tuncaytm0" target="_blank">Mənə Dəstək Ol!</a>
   <a class="link-button youtube" href="https://youtube.com/@tuncaytm0" target="_blank">YouTube Kanalım!</a>
@@ -123,4 +136,3 @@
 
 </body>
 </html>
-
